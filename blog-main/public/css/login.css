@@ -1,0 +1,128 @@
+.login-container{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.944);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-y: scroll;
+}   
+   
+   .login{
+        width: 33%;
+        height: 70vh;
+        margin: 50px auto;
+        border-radius: 8px;
+        background-color: black;
+        padding: 1rem 1.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0.5rem;
+    }
+    .login h1{
+        background-color: #f9f9f9;
+        padding: 20px 0;
+        font-size: 140%;
+        text-align: center;
+    }
+    .login img{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 14rem;
+        width: 9rem;
+    }
+    .login form{
+        margin-top: 3rem;
+        padding: 1rem 2.7rem;
+        color: white;
+    }
+
+    form input[type="text"],
+    form input[type="password"]{
+        width: 90%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+    }
+    
+ .submit{
+    margin-top: 3rem;
+    padding: 0.7rem 1rem;
+    background-color: rgb(107, 21, 21);
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 16px;
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+.sidebar-panel .top{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.sidebar-panel .top img{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 5rem;
+}
+.sidebar-panel ul{
+    margin-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.3rem;
+    list-style: none;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid red;
+    width: 100%;
+    transition: 1sec ease-in-out;
+
+}
+.sidebar-panel ul li{
+    width: 100%;
+    padding: 0.4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 1sec ease-in-out;
+
+}
+ .active{
+    background-color: rgba(157, 155, 155, 0.299);
+}
+
+.sidebar-panel ul li h3{
+    /* width: 50%; */
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+.sidebar-panel ul li:last-child{
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    /* background-color: rgba(215, 10, 10, 0.673); */
+    padding: 0.7rem 1.2rem;
+
+}

@@ -1,0 +1,62 @@
+
+.ModalForm {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+  
+.ModalForm label {
+    display: block;
+    margin-bottom: 1rem;
+    color: #31304D; 
+    font-size: 1.2rem;
+}
+  
+
+.ModalForm input,
+.ModalForm textarea {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+ 
+
+.ModalForm button {
+    margin-right: 10px;
+}
+
+
+.successMessage {
+    font-size: 2rem;
+    color: black;
+}
+
+
+.addBtn {
+   background: #6A3CBC; 
+   color: white;
+   padding: 0.4rem 0.7rem;
+   font-size: 1rem;
+   border-radius: 0.5rem;
+   border: none;
+   outline: none;
+}
+
+.addBtn:hover {
+    background: #461B93;
+}
+
+.closeBtn {
+    background: #6B728E;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.closeBtn:hover {
+    background: #404258;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IndexedDB Edit Example</title>
+</head>
+<body>
+    <h1>IndexedDB Edit Example</h1>
+    <ul id="item-list"></ul>
+    <form id="edit-form">
+        <input type="text" id="edit-name" placeholder="Edit Name" required>
+        <button type="submit">Save</button>
+    </form>
+
+    <script>
+        const dbName = "myDatabase";
+        const dbVersion = 1;
+        const storeName = "items";
+        let db;
+
+        const itemList = document.getElementById("item-list");
+        const editForm = document.getElementById("edit-form");
+        const editNameInput = document.getElementById("edit-name");
+
+        // Open the database
+        const request = indexedDB.open(dbName, dbVersion);
+
+        request.onupgradeneeded = function(event) {
+            db = event.target.result;
+
+            // Create an object store if it doesn't exist
+            if (!db.objectStoreNames.contains(storeName)) {
+                db.createObjectStore(storeName, { keyPath: "id", autoIncrement: true });
+            }
+        };
+
+        request.onsuccess = function(event) {
+            db = event.target.result;
+
+            displayItems();
+
+            editForm.addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                const itemId = parseInt(editForm.dataset.itemId);
+                const updatedName = editNameInput.value;
+
+                const transaction = db.transaction([storeName], "readwrite");
+                const store = transaction.objectStore(storeName);
+
+                store.get(itemId).onsuccess = function(event) {
+                    const item = event.target.result;
+                    item.name = updatedName;
+
+                    const updateRequest = store.put(item);
+
+                    updateRequest.onsuccess = function() {
+                        console.log(`Item with ID ${itemId} updated successfully.`);
+                        displayItems();
+                    };
+                };
+            });
+        };
+
+        function displayItems() {
+            const transaction = db.transaction([storeName], "readonly");
+            const store = transaction.objectStore(storeName);
+
+            itemList.innerHTML = "";
+
+            store.openCursor().onsuccess = function(event) {
+                const cursor = event.target.result;
+                if (cursor) {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = `ID: ${cursor.key}, Name: ${cursor.value.name}`;
+                    
+                    const editButton = document.createElement("button");
+                    editButton.textContent = "Edit";
+                    editButton.addEventListener("click", function() {
+                        editForm.dataset.itemId = cursor.key;
+                        editNameInput.value = cursor.value.name;
+                    });
+
+                    listItem.appendChild(editButton);
+                    itemList.appendChild(listItem);
+
+                    cursor.continue();
+                }
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "title": "hello",
+      "message": "hello world!",
+      "id": 1
+    },
+    {
+      "title": "first post",
+      "message": "Waffles. See brother cat receive pets, attack out of jealousy demand to be let outside at once, and expect owner to wait for me.",
+      "id": 2
+    },
+    {
+      "title": "second post ",
+      "message": "Touch water with paw then recoil in horror. Kitty time sit on human they not getting up ever. Scratch at the door then walk away lasers are tiny mice love fish.",
+      "id": 3
+    },
+    {
+      "title": "third post ",
+      "message": "Catch eat throw up catch eat throw up bad birds hiding behind the couch until lured out by a feathery toy or human is behind a closed door, emergency!",
+      "id": 4
+    },
+    {
+      "title": "hi there",
+      "message": "what did you say to me dear?",
+      "id": 5
+    }
+  ]
+}

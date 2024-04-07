@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+form {
+  width: 30rem;
+  height: 60vh;
+  background-color: blanchedalmond;
+  background: rgb(143, 106, 69);
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem;
+  background: rgb(166, 114, 77);
+}
+
+form label {
+  display: block;
+  margin: 0.5rem 0 0 0;
+  font-size: 1.3rem;
+}
+
+form input, 
+form textarea {
+  width: 20rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.addBtn {
+  background: rgb(163, 163, 240);
+  padding: 0.5rem 0.7rem;
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+  border: none;
+  background: rgb(241, 210, 132);
+}
+
+.addBtn:hover {
+  background:  rgb(196, 171, 109);
+}
+
+
+.ticketBox {
+  margin: 3rem 1.5rem 1.5rem 1.5rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+
+.ticketCard {
+  background: rgb(175, 131, 88);
+  padding: 1rem;
+  border: none;
+  border-radius: 3rem;
+  margin: 1rem 1rem 0  0;
+  box-shadow: 0 0.1rem 0.3rem;
+}
+
+.ticketCard p{
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+
+.ticketCard .title {
+  text-decoration: underline;
+}
+
+.changeBtn {
+  font-size: 1.1rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-inline: 1rem;
+  margin: 0.5rem;
+  background: rgb(241, 210, 132);
+}
+
+.changeBtn:hover {
+  background:  rgb(152, 131, 78);
+}

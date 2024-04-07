@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+.form_container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* form{
+  border: 1px solid salmon;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30%;
+  padding: 3rem;
+} */
+
+input,
+textarea {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid rgb(240, 240, 240);
+}
+
+.submit_button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit_button:hover {
+  background-color: bisque;
+}

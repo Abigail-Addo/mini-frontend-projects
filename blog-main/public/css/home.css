@@ -1,0 +1,205 @@
+    .home{
+       
+   
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .meals{
+        margin-top: 1.7rem;
+        width: 100%;
+        padding: 1rem 1.7rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(157, 155, 155, 0.299);
+        /* scale: 0.9; */
+        transition: 1sec ease-in-out;
+    }
+
+    .meals .container{
+        display: grid;
+        grid-template-columns:  1fr;
+        width: 100%;
+        padding: 0.8rem 1rem;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    .meals .container .meal{
+        padding: 0.5rem 0.5rem;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin: 1rem;
+
+    }
+    .meals .container .meal img{
+        max-width: 12rem;
+        max-height: 12rem;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .meals .container .meal .detail{
+        /* margin: 1rem; */
+        width: 13rem;
+        padding: 0.3rem 0.3rem;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 1sec ease-in-out;
+    }
+
+    .meals .container .meal .detail .desc{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.3rem 0.5rem;
+    }
+    /* .meals .container .meal .details button{ */
+    div.meals .container .meal .detail .description{
+        display: flex;
+        padding: 0.3rem 0.5rem;
+        align-items: center;
+    }
+
+div.main_content > div > div.meals .container .meal button {
+        padding: 0.8rem 1rem;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 1sec ease-in-out;
+         /* background-color: rgba(215, 10, 10, 0.673); */
+        display: flex;
+        align-items: center;
+        margin: 1rem auto;
+        margin-left: 1rem;
+        width: 70%;
+
+    }
+
+div.main_content > div > div.meals > div > div > button:hover {
+        background-color: rgba(157, 155, 155, 0.299);
+    color: white;
+}
+@media (min-width: 600px) and (max-width: 731px) {
+       .meals{
+        /* background-color: rgba(177, 58, 58, 0.657); */
+    }
+}
+
+
+@media (min-width: 732px) and (max-width: 1000px) {
+    .meals{
+        /* background-color: rgba(58, 58, 177, 0.657); */
+    }
+    .meals .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 0.9rem 1.2rem;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .meals .container .meal img{
+        width: 15rem;
+        height: 15rem;
+       
+    }
+}
+/* media screen mobile screen and less */
+@media (min-width: 1001px) {
+    .meals{
+        /* background-color: rgba(84, 177, 58, 0.657); */
+    }
+    .meals .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        padding: 1rem 1.7rem;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    .meals .container .meal img{
+        width: 16rem;
+        height: 16rem;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 599px) {
+    .meals{
+        text-align: center;
+        margin: 0 auto;
+        /* background-color: rgba(26, 57, 70, 0.657); */
+
+    }
+
+    .meals .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0.6rem 0.9rem;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+
+    .meals .container .meal .detail{
+        width: 19rem;
+        text-align: center;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+
+    .meals .container .meal img{
+        width: 19rem;
+        height: 19rem;
+    }
+   .meal button {
+        width: 19rem;
+        display: none;
+    }
+}
+
+@media (min-width: 299px) and (max-width: 468px) {
+    .meals{
+        margin-top: 1.7rem;
+        /* background-color: rgba(139, 32, 130, 0.657); */
+        text-align: center;
+        margin: 0 auto;
+        padding: 0.3rem 0.6rem;
+        }
+    .meals .container{
+        padding: 0.3rem 0.6rem;
+        border-radius: 2px solid red;
+       
+    }
+    .meals .container .meal img{
+            max-width: 10rem;
+            max-height: 10rem;
+            text-align: center;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+}

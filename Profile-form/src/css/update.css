@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #4B71A6;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    padding: 0.5rem 3rem;
+    color: #fff;
+}
+
+header svg {
+    cursor: pointer;
+}
+
+section.profile {
+    width: 60%;
+    height: 100%;
+    display: grid;
+    padding: 1.5rem;
+    grid-template-columns: 1fr;
+    /* gap: 1.5rem; */
+
+}
+
+div.form {
+    background-color: #4B71A6;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 2rem; */
+}
+
+div.image {
+    position: relative;
+}
+
+div.image img {
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    padding: 0 0 1rem;
+}
+
+div.camera svg {
+    background-color: rgb(126, 182, 235);
+    border-radius: 50%;
+    padding: 0.4rem;
+    position: absolute;
+    left: 57%;
+    bottom: 9%;
+    cursor: pointer;
+}
+
+div.details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+
+}
+
+div.details div {
+    padding: 0 1rem 1rem;
+
+}
+
+div.details div p {
+    color: #fff;
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+h5 {
+    color: rgb(126, 182, 235);
+    font-size: 1rem;
+}
+
+section.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+button {
+    background-color: rgb(126, 182, 235);
+    border: 0;
+    padding: 0.5rem 3rem;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+.gridCol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 0 2rem;
+    background-color: #274063;
+    border-radius: 20px;
+}
+
+.gridCol div.formControl {
+    margin: 0;
+}
+
+form div.formControl {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 0 2rem;
+    background-color: #274063;
+    border-radius: 20px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+div.password {
+    position: relative;
+}
+
+input {
+    padding: 0.5rem 3rem 0.5rem 0.5rem;
+    background-color: #274063;
+    color: #FFF;
+    margin-bottom: 1.5rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #808080;
+    outline: 0;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+}
+
+div.btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+button.update {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #274063;
+}
+
+button.update:hover {
+    background-color: #274063;
+    color: #fff;
+}
+
+.trick-upload {
+    width: 50%;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.logout {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    header {
+        width: 100%;
+    }
+}

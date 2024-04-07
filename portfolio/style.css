@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 3rem;
+}
+
+div.header {
+    display: flex;
+    gap: 1rem;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.header div img {
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+div.header div h1 {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+div.header div h5 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+div.header div span svg {
+    margin-right: 0.5rem;
+}
+
+div.contact span.telegram {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgb(0, 0, 255);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+div.contact span.telegram:hover,
+div.contact span.telegram:active {
+    background-color: rgba(0, 0, 255, 0.8);
+}
+
+/* div.contact span.toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+div.contact span.toggle svg {
+    cursor: pointer;
+} */
+
+div.contact span.telegram svg {
+    fill: #fff;
+}
+
+section.container {
+    background-color: #DAE3E7;
+    display: flex;
+}
+
+div.section1 {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+div.about {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem 1rem 1rem 2rem;
+}
+
+div.about h1 {
+    padding-bottom: 1rem;
+}
+
+div.about p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+div.experience {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem 1rem 1rem 2rem;
+}
+
+div.experience h1 {
+    padding-bottom: 1rem;
+}
+
+div.experience p span {
+    font-weight: bold;
+}
+
+div.experience p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+    position: relative;
+
+}
+
+div.experience a {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+div.experience ul li {
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-top: 0.5rem;
+    list-style-position: inside;
+}
+
+div.experience ul li:last-child {
+    padding-bottom: 1rem;
+}
+
+div.experience ul li span {
+    font-weight: bold;
+}
+
+div.section2 {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+div.location {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+div.location span {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+svg {
+    fill: rgba(0, 0, 0, 0.7);
+}
+
+div.location span a {
+    color: #000;
+    text-decoration: none;
+}
+
+div.education {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+div.education h1 {
+    margin-bottom: 1rem;
+}
+
+div.education span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+div.education p {
+    margin-left: 1.5rem;
+    line-height: 1.5rem;
+}
+
+div.education p:first-child {
+    font-weight: bold;
+}
+
+div.project {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+div.project h1 {
+    padding-bottom: 1rem;
+}
+
+div.project span {
+    font-weight: bold;
+}
+
+div.project p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+    position: relative;
+
+}
+
+div.project a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: underline;
+}
+
+div.project ul li {
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-top: 0.5rem;
+    list-style-position: inside;
+}
+
+/* div.project ul li:last-child {
+    list-style-type: circle;
+    padding-bottom: 1rem;
+} */
+
+div.project ul li span {
+    font-weight: bold;
+}
+
+div.skills {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem 2rem 1rem 1rem;
+    text-align: justify;
+}
+
+div.skills h1 {
+    margin-bottom: 1rem;
+}
+
+div.skills span {
+    font-weight: bold;
+}
+
+div.hobbies {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+div.hobbies h1 {
+    margin-bottom: 1rem
+}
+
+div.hobbies span {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    div.header {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        
+    }
+
+    header {
+        margin: 1rem;
+        flex-direction: column;
+      align-items: start;
+      width: 100%;
+    }
+
+    section.container {
+        background-color: #DAE3E7;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.section1,
+    div.section2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    div.about,
+    div.experience {
+        margin: 1rem;
+    }
+
+    div.location,
+    div.education,
+    div.skills,
+    div.hobbies {
+        margin: 1rem;
+    }
+}

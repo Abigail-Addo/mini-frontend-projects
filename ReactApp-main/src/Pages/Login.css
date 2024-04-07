@@ -1,0 +1,73 @@
+/* Login.css */
+.con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ .wrapper {
+  background: rgba(255, 255, 255, 0.5); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  z-index: 9999;
+ 
+ }
+
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/cart.jpg'); 
+  background-size: cover;
+  filter: blur(10px); 
+  z-index: -1;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.3); 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent; 
+}
+
+input {
+  background: rgba(255, 255, 255, 0.5); 
+  border: none;
+  border-bottom: 1px solid #ccc; 
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  width: 500px;
+  transition: background 0.3s ease; /* Add transition for a smooth effect */
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.8); /* Lighten the background on focus */
+}
+
+button {
+  background-color: rgb(105, 153, 32) !important; /* Semi-transparent background for the button */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 500px;
+  transition: background 0.3s ease; /* Add transition for a smooth effect */
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.8); /* Darken the button background on hover */
+}

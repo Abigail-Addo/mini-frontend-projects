@@ -1,0 +1,25 @@
+### create a new user
+POST http://localhost:2019/api/createUser
+Content-Type: application/json
+
+{
+    "username" : "abi_aa",
+    "password" : "user_one",
+    "profile_photo" : "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "location" : "Kasoa, Ghana",
+    "email" : "abiaa@gmail.com"
+}
+
+### get all users
+GET http://localhost:2019/api/users
+
+### login a user
+POST http://localhost:2019/api/login
+Content-Type: application/json
+
+{
+    "username" : "n_adwoa",
+    "password" : "user_one",
+    "email" : "nana1@gmail.com"
+}
+

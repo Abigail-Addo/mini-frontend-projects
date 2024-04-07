@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | My Blog</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/blog.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <header class="border-bottom">
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="nav">
+                <!-- <div> -->
+                <i class="bi bi-search"></i>
+                <input type="search" name="search" id="search" placeholder="Search...">
+                <!-- </div> -->
+                <div class="admin">
+                    <div>
+                        <img src="img/user.jpg" alt="Admin">
+                    </div>
+                    <div>
+                        <h6 class="gap-2">Nana Adwoa <br> <span>
+                                <i class="bi bi-dot"></i>Available
+                            </span>
+                        </h6>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="bi bi-bell px-5"></i>
+                        <i class="bi bi-chat-left-dots"></i>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+        <section class="sidebar">
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"><i class="bi bi-house-door active"></i>
+                            Dashboard</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link active"><i class="bi bi-pencil-square"></i> My Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="posts.html" class="nav-link" aria-current="page"><i class="bi bi-file-text"></i>
+                            Posts</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="bi bi-chat"></i> Comments</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="bi bi-box-arrow-left"></i> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="containers">
+            <div class="position-sticky" style="top: 0;">
+                <form class="needs-validation" id="dataForm" novalidate>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <input type="topic" class="form-control" id="topic" placeholder="Topic" required>
+                            <div class="invalid-feedback">
+                                Please enter some text.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <textarea name="paragraph" id="paragraph" cols="30" rows="10" class="form-control"
+                                placeholder="Paragraph" required></textarea>
+                            <div class="invalid-feedback">
+                                Please enter some text.
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <input type="file" name="image" id="image" accept="image/*">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 pt-5">
+                        <button class="w-100 btn btn-primary btn-lg" type="submit" id="editForm">Publish</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="recent_posts px-4">
+                <div >
+                    <div>
+                        <h4 class="fst-italic">Recent posts</h4>
+                        <ul class="list-unstyled" id="output">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="js/blog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

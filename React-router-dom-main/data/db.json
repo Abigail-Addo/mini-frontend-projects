@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "item": "Watch k drama",
+      "summary": "King the land",
+      "id": 1
+    },
+    {
+      "item": "Go to class",
+      "summary": "Div",
+      "id": 2
+    }
+  ]
+}

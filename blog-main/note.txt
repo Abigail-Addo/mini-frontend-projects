@@ -1,0 +1,17 @@
+## Bernice
+
+- Database
+
+## Naazira
+
+- Error Handling
+- Middleware
+- Auth Model
+
+
+## Blessing
+
+- Node.js basic
+- Express
+- Database
+

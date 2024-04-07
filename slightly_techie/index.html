@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <header class="border-bottom">
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="nav">
+                <!-- <div> -->
+                <i class="bi bi-search"></i>
+                <input type="search" name="search" id="search" placeholder="Search...">
+                <!-- </div> -->
+                <div class="admin">
+                    <div>
+                        <img src="img/user.jpg" alt="Admin">
+                    </div>
+                    <div>
+                        <h6 class="gap-2">Nana Adwoa <br> <span>
+                                <i class="bi bi-dot"></i>Available
+                            </span>
+                        </h6>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="bi bi-bell px-5"></i>
+                        <i class="bi bi-chat-left-dots"></i>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+        <section class="sidebar">
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active"><i class="bi bi-house-door active"></i>
+                            Dashboard</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link"><i class="bi bi-pencil-square"></i> My Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="posts.html" class="nav-link" aria-current="page"><i class="bi bi-file-text"></i> Posts</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="bi bi-chat"></i> Comments</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="bi bi-box-arrow-left"></i> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="containers">
+            <div class="d-flex justify-content-between align-items-center salutation">
+                <div>
+                    <h2>Hello Nana,</h2>
+                    <p>See your blog statistics summary</p>
+                </div>
+                <div class="current_date py-2 px-3"></div>
+            </div>
+            <div class="statistics py-2">
+                <div class="card border-0">
+                    <h5 class="pt-3 px-5">Active Posts</h5>
+                    <div class="px-4 d-flex justify-content-between gap-2 py-3 border-bottom">
+                        <img src="img/post1.jpg" alt="jollof">
+                        <div class="text-truncate">
+                            <h4 class="text-truncate"> <a href="#" title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                odit harum voluptatibus maxime veritatis sunt.">Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Vero odit harum voluptatibus maxime veritatis sunt.</a></h4>
+                            <p class="d-none"></p>
+                            <div class="d-flex justify-content-end align-items-start gap-3 ">
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash3"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4 d-flex justify-content-between gap-2 py-3 border-bottom">
+                        <img src="img/post1.jpg" alt="jollof">
+                        <div class="text-truncate">
+                            <h4 class="text-truncate"> <a href="#" title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                odit harum voluptatibus maxime veritatis sunt.">Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Vero odit harum voluptatibus maxime veritatis sunt.</a></h4>
+                            <div class="d-flex justify-content-end align-items-start gap-3 ">
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash3"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4 d-flex justify-content-between gap-2 py-3 border-bottom">
+                        <img src="img/post1.jpg" alt="jollof">
+                        <div class="text-truncate">
+                            <h4 class="text-truncate"> <a href="#" title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                odit harum voluptatibus maxime veritatis sunt.">Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Vero odit harum voluptatibus maxime veritatis sunt.</a></h4>
+                            <div class="d-flex justify-content-end align-items-start gap-3 ">
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash3"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4 d-flex justify-content-between gap-2 py-3 border-bottom">
+                        <img src="img/post1.jpg" alt="jollof">
+                        <div class="text-truncate">
+                            <h4 class="text-truncate"> <a href="#" title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                odit harum voluptatibus maxime veritatis sunt.">Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Vero odit harum voluptatibus maxime veritatis sunt.</a></h4>
+                            <div class="d-flex justify-content-end align-items-start gap-3 ">
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash3"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4 d-flex justify-content-between gap-2 py-3 border-bottom">
+                        <img src="img/post1.jpg" alt="jollof">
+                        <div class="text-truncate">
+                            <h4 class="text-truncate"> <a href="#" title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                odit harum voluptatibus maxime veritatis sunt.">Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Vero odit harum voluptatibus maxime veritatis sunt.</a></h4>
+                            <div class="d-flex justify-content-end align-items-start gap-3 ">
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash3"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4 d-flex justify-content-between gap-2 py-3 border-bottom">
+                        <img src="img/post1.jpg" alt="jollof">
+                        <div class="text-truncate">
+                            <h4 class="text-truncate"> <a href="#" title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                odit harum voluptatibus maxime veritatis sunt.">Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Vero odit harum voluptatibus maxime veritatis sunt.</a></h4>
+                            <div class="d-flex justify-content-end align-items-start gap-3 ">
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash3"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4 d-flex justify-content-between gap-2 py-3 border-bottom">
+                        <img src="img/post1.jpg" alt="jollof">
+                        <div class="text-truncate">
+                            <h4 class="text-truncate"> <a href="#" title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                odit harum voluptatibus maxime veritatis sunt.">Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Vero odit harum voluptatibus maxime veritatis sunt.</a></h4>
+                            <div class="d-flex justify-content-end align-items-start gap-3 ">
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash3"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="dashboard">
+                    <h1 class="px-5">Dashboard</h1>
+                    <div class="chart-container">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

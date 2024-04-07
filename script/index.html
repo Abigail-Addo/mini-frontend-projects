@@ -1,0 +1,117 @@
+<!-- <!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function start</title>
+    <style>
+        .msgBox {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 242px;
+            background: #eee;
+        }
+
+        .msgBox p {
+            line-height: 1.5;
+            padding: 10px 20px;
+            color: #333;
+            padding-left: 82px;
+            background-position: 25px center;
+            background-repeat: no-repeat;
+
+        }
+
+        .msgBox button {
+            background: none;
+            border: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 1.1rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Display message box</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function library example</title>
+    <!-- <style>
+        input {
+            font-size: 2em;
+            margin: 10px 1px 0;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- onclick="myFunction()" -->
+    <!-- <button>Change color</button>
+    <button>Change color2</button>
+    <button>Change color3</button>
+    <button>Change color4</button>
+    <button>Change color5</button>
+    <button>Change color6</button> -->
+   <!-- <form action="">
+    <label for="fn">First Name</label>
+<input type="text" name="fn" id="fn">
+
+<label for="ln">Last Name</label>
+<input type="text" name="ln" id="ln">
+
+<input type="submit" value="Submit">
+   </form> 
+<p></p> -->
+
+    <!-- <input class="numberInput" type="text">
+    <p></p> -->
+
+    <script>
+
+const form =document.querySelector("form");
+const fn = document.querySelector("#fn");
+const ln = document.querySelector("#ln");
+const p = document.querySelector("p");
+
+form.addEventListener("submit", (e) => {
+    if (fn.value === "" || ln.value === "") {
+        e.preventDefault();
+        p.textContent = "Please fill this form"
+    };
+});
+
+        // const btn = document.querySelector('button');
+
+        // const buttons = document.querySelectorAll('button');
+        // function random(number) {
+        //     return Math.floor(Math.random() * (number + 1));
+        // }
+
+        
+    //    for (const button of buttons) {
+    //      button.addEventListener('click', () => {
+    //         const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+    //         document.body.style.backgroundColor = rndCol;
+    //     })};
+
+        // function myFunction() {
+        //     const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+        //     document.body.style.backgroundColor = rndCol;
+        // };
+    </script>
+</body>
+</html>

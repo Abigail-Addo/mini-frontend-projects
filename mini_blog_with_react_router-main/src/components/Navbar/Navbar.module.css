@@ -1,0 +1,94 @@
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #5B0888;
+    color: whitesmoke;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 2rem; 
+    text-transform: uppercase;
+    color: #fff; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for a nice effect */
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: #B15EFF; 
+}
+
+
+.navLinks {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+}
+
+li {
+    padding: 0 1.5rem 0 0;
+    font-size: 1.3rem;
+    font-weight: 550;
+    transition: color 0.2s ease;
+}
+
+li:hover {
+    color: #d9bcf5;
+}
+
+
+.createBtn {
+    background: #c7b3d3; 
+    color: white;
+    cursor: pointer;
+    padding: 0.2rem 0.6rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+}
+
+.createBtn:hover {
+    color: #B15EFF;
+}
+
+/* Style the SVG element inside the createBtn */
+.createBtn svg { 
+    fill: white;
+    margin-right: 0; 
+    font-size: 1.5rem;
+}
+
+.createBtn svg:hover {
+    fill: #B15EFF;
+}
+
+
+
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navLinks {
+        margin-top: 1rem;
+    }
+
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    li {
+        padding: 1rem 0;
+    }
+}

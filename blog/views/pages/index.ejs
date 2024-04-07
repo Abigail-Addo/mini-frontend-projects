@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="css/index.css">
+<!-- <link rel="shortcut icon" href="assets/icons/favicon.svg" type="image/x-icon"> -->
+
+<main class="wrapper">
+    <h2>Welcome</h2>
+    <div class="image">
+        <img src="assets/images/user.png" alt="users image">
+    </div>
+    <div class="errorMessage"></div>
+    <form>
+        <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Username" id="username" required>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email" id="email" required>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <i class="bi bi-eye-slash" id="togglePassword"></i>
+        </div>
+
+        <button type="submit" class="submit">Log in</button>
+        <a href="">Forgot password?</a>
+    </form>
+    <p>Don't have an account? <a href="/register"> Sign up</a></p>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/index.js"></script>
